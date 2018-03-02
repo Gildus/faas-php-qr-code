@@ -15,7 +15,8 @@ RUN set -x \
 WORKDIR /usr/local/faas
 COPY function   /usr/local/faas/function
 COPY index.php php-extension.sh composer.*    ./
-RUN chmod u+x ./php-extension.sh && ./php-extension.sh
+RUN chmod u+x ./php-extension.sh 
+RUN ./php-extension.sh
 RUN set -x \
     && chown -R docker /usr/local/faas
 
