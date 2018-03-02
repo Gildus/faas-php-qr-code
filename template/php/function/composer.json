@@ -1,0 +1,19 @@
+{
+    "name": "denis/funcion-qr",
+    "description": "Funcion QR con PHP para Open Faas",
+    "require": {
+	    "php": ">=7.1",
+        "ext-gd": "*",
+        "endroid/qr-code": "3.2.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gildus",
+            "email": "gildus@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    }
+}
