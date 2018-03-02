@@ -8,7 +8,6 @@ class Handler
     public function handle(string $_data) : void
     {
         $qrCode = new QrCode($_data);
-        header('Content-Type: '.$qrCode->getContentType());
-        echo $qrCode->writeString();
+        echo base64_encode($qrCode->writeString());
     }
 }
